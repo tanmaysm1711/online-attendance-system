@@ -15,15 +15,15 @@ const Widget = ({ type }) => {
   switch (type) {
     case "user":
       data = {
-        title: "USERS",
+        title: "STUDENTS",
         isMoney: false,
-        link: "See all users",
+        link: "See all students",
         icon: (
           <PersonOutlinedIcon
             className="icon"
             style={{
-              color: "crimson",
-              backgroundColor: "rgba(255, 0, 0, 0.2)",
+              color: "blue",
+              backgroundColor: "rgba(0, 0, 250, 0.2)",
             }}
           />
         ),
@@ -31,15 +31,15 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "ORDERS",
+        title: "ABSENT",
         isMoney: false,
-        link: "View all orders",
+        link: "View all absent students",
         icon: (
-          <ShoppingCartOutlinedIcon
+          <PersonOutlinedIcon
             className="icon"
             style={{
-              backgroundColor: "rgba(218, 165, 32, 0.2)",
-              color: "goldenrod",
+              backgroundColor: "rgba(250, 0, 0, 0.2)",
+              color: "red",
             }}
           />
         ),
@@ -47,11 +47,11 @@ const Widget = ({ type }) => {
       break;
     case "earning":
       data = {
-        title: "EARNINGS",
+        title: "PRESENT",
         isMoney: true,
-        link: "View net earnings",
+        link: "View all present students",
         icon: (
-          <MonetizationOnOutlinedIcon
+          <PersonOutlinedIcon
             className="icon"
             style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "green" }}
           />
